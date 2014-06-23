@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="styles/default.css">
 </head>
 
+<body>
+    
 <form id="mortgageCalculator" action="go.html" method="post">
     
     <div class="mortgage personalInformation">
@@ -16,7 +18,7 @@
         <input type="email" id="customerEmailAddress" size="20" placeholder="Enter Email Address">
     </div>
     
-    <div class="mortgage Amount">
+    <div class="mortgage amount">
         <label for="mortgageAmount">Loan Amount</label>
         <input type="number" id="mortgageAmount" size="20" placeholder="$0">
     </div>
@@ -27,7 +29,7 @@
     </div>
     
     <div class="mortgage expenses">
-        <label for="monthlyExpenses" class="larger">Monthyl Expenses<br/> </label>
+        <label for="monthlyExpenses" class="larger">Monthly Expenses<br/> </label>
         <p>List all expense including rent, existing mortgage, utilities, credit card payments, etc.</p>
         <fieldset id="monthlyExpenses" class="mortgage">
             <input type="number" id="residenceExpense" size="20" placeholder="Residence (rent)">
@@ -41,18 +43,53 @@
         </fieldset>
     </div>
     
+    <div class="mortgage paymentTerms">
+        <label for="paymentTerms" class="larger">Payment Terms</label>
+        <input type="radio" name="paymentTerms" value="15 Year Mortgage">
+    </div>
+    
     <div class="mortgage submitForm">
         <input id="calculate" type="submit" value="Estimate Monthly Payment" >
     </div>
     
     <div class="mortgage monthlyPayment">
-        <input type="number" id="monthlyPayment" size="15" placeholder="$0"> <label for="monthlyPayment">Per Month</label>
+        <input type="number" id="monthlyPayment" size="15" placeholder="$0">
+        <label for="monthlyPayment">Per Month</label>
     </div>
     
 </form>
 
+<div id="tabGroup">
+    
+    <div class="tab-content" id="tab1">
+    <h3 class="tabHeader" id="header1">Monthly Payments</h3>
+    <div id="content1">
+        Use the form above to estimate your monthly payments.
+    </div>
+    </div>
+    
+    <div class="tab-content" id="tab2">
+    <h3 class="tabHeader" id="header2">Interest &amp; Payments</h3>
+    <div id="content2">
+        Use the form above to find out how much interest you will pay.
+    </div>
+    </div>
+    
+    <div class="tab-content" id="tab3">
+    <h3 class="tabHeader" id="header3">Compare 15 / 30</h3>
+    <div id="content3">
+        Use the form above to compare Mortgage Repayment Terms.
+    </div>
+    </div>
+      
+</div>
 
-<body>
+<div id="footer">
+    <div class="footerContent">
+        Temporary footer content.
+    </div>
+</div>
+
 </body>
 <script src="js/script.js" type="text/javascript"></script>
 </html>
