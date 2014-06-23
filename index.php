@@ -4,17 +4,16 @@
 <head>
 <meta charset="utf-8">
 <title>Test project in GitHub</title>
-<script src="js/script.js" type="text/javascript"></script>
 <link rel="stylesheet" href="styles/default.css">
 </head>
 
-<form action="formProcess.html" method="post" id="mortgageCalculator">
+<form id="mortgageCalculator" action="go.html" method="post">
     
     <div class="mortgage personalInformation">
         <label for="customerNameField"></label>
         <input type="text" id="customerNameField" size="20" placeholder="Enter Name">
         <label for="customerEmailAddress"></label>
-        <input type="email" id="customerEmailAddress" size="20" placeholder="Enter Email Address" required="yes">
+        <input type="email" id="customerEmailAddress" size="20" placeholder="Enter Email Address">
     </div>
     
     <div class="mortgage Amount">
@@ -24,11 +23,11 @@
     
     <div class="mortgage income">
         <label for="monthlyIncome">Monthly Income</label>
-        <input type="number" id="monthlyIncome" size="10" placeholder="$0" required="yes">
+        <input type="number" id="monthlyIncome" size="10" placeholder="$0">
     </div>
     
     <div class="mortgage expenses">
-        <label for="monthylExpense" class="larger">Monthyl Expenses<br/> </label>
+        <label for="monthlyExpenses" class="larger">Monthyl Expenses<br/> </label>
         <p>List all expense including rent, existing mortgage, utilities, credit card payments, etc.</p>
         <fieldset id="monthlyExpenses" class="mortgage">
             <input type="number" id="residenceExpense" size="20" placeholder="Residence (rent)">
@@ -43,11 +42,11 @@
     </div>
     
     <div class="mortgage submitForm">
-        <input type="submit" value="Estimate Monthly Payment">
+        <input id="calculate" type="submit" value="Estimate Monthly Payment" >
     </div>
     
     <div class="mortgage monthlyPayment">
-        <input type="text" id="monthlyPayment" size="15" placeholder="$0"> <label for="monthlyPayment">Per Month</label>
+        <input type="number" id="monthlyPayment" size="15" placeholder="$0"> <label for="monthlyPayment">Per Month</label>
     </div>
     
 </form>
@@ -55,5 +54,5 @@
 
 <body>
 </body>
-
+<script src="js/script.js" type="text/javascript"></script>
 </html>
