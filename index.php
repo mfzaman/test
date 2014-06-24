@@ -61,34 +61,34 @@
 
 <div id="tabGroup">
     
-    <div class="tab-content" id="tab1">
-    <h3 class="tabHeader" id="header1">Monthly Payments</h3>
-    <div id="content1">
+    <h3 class="tabHeader active" id="header1">Monthly Payments</h3>
+    <div class="tabContent active" id="content1">
         Use the form above to estimate your monthly payments.
     </div>
-    </div>
+
     
-    <div class="tab-content" id="tab2">
     <h3 class="tabHeader" id="header2">Interest &amp; Payments</h3>
-    <div id="content2">
+    <div class="tabContent" id="content2">
         Use the form above to find out how much interest you will pay.
     </div>
-    </div>
+
     
-    <div class="tab-content" id="tab3">
     <h3 class="tabHeader" id="header3">Compare 15 / 30</h3>
-    <div id="content3">
+    <div class="tabContent" id="content3">
         Use the form above to compare Mortgage Repayment Terms.
     </div>
-    </div>
       
+      <div class="clear"></div>
 </div>
+
+
 
 <div id="footer">
     <div class="footerContent">
         Temporary footer content.
     </div>
 </div>
+
 
 </body>
 <script src="js/script.js" type="text/javascript"></script>
