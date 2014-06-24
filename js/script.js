@@ -27,6 +27,19 @@ calculateMortgagePayment();
     
 };
 
+function resetTabs() {
+    
+    var headerClass = 'tabHeader';
+    var contentClass = 'tabContent';
+    
+    var tabHeaders = document.getElementsByClassName('tabHeader');
+    var tabContents = document.getElementsByClassName('tabContent');
+    for (i = 0; i < tabHeaders.length; i++) {
+        tabHeaders[i].className = headerClass;
+        tabContents[i].className = contentClass;
+    }
+};
+
 function tabController() {
     document.getElementById('tabGroup').className = "ready";
     
@@ -36,7 +49,11 @@ function tabController() {
     }
     
     function activateTab(event) {
-        var myID = this.id;
+        var myID = this.id, contentID = myID.replace('header', 'content');
+        resetTabs();
+        document.getElementById(myID).className = "tabHeader active";
+        document.getElementById(contentID).className = "tabContent active";
+        console.log(contentID);
         console.log(myID);
     }
     
