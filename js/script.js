@@ -56,13 +56,20 @@ function tabController() {
         console.log(contentID);
         console.log(myID);
     }
-    
 };
 
+function drawMap() {
+var mapOptions = {
+center: new google.maps.LatLng(40.6881559, -73.8325258),
+zoom: 15
+};
+var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+}
+    
 window.onload; {  
-
 document.getElementById('mortgageCalculator').addEventListener('submit', stopProcess);
 document.addEventListener('DOMContentLoaded', tabController);
-
+document.addEventListener('DOMContentLoaded', drawMap);
 }
+
 
