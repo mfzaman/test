@@ -5,6 +5,10 @@
 <meta charset="utf-8">
 <title>Test project in GitHub</title>
 <link rel="stylesheet" href="styles/default.css">
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgV3SVJqjy84nSM5tU24cRB62-eSFigjc">
+    </script>
+
 </head>
 
 <body>
@@ -81,7 +85,9 @@
       <div class="clear"></div>
 </div>
 
-
+<div id="googleMap">
+    
+</div>
 
 <div id="footer">
     <div class="footerContent">
